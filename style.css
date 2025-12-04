@@ -1,0 +1,76 @@
+/* ----------------------------------------------------------------
+   1. FONT IMPORT (Inter)
+   ---------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+/* ----------------------------------------------------------------
+   2. GLOBAL & BODY STYLES
+   ---------------------------------------------------------------- */
+body {
+    /* Set the Inter font as requested */
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    /* Clean white background and dark gray text */
+    background-color: #ffffff;
+    color: #1f2937; /* Tailwind gray-800 */
+    min-height: 100vh;
+}
+
+/* ----------------------------------------------------------------
+   3. ACCENT COLORS & HIGHLIGHTS
+   ---------------------------------------------------------------- */
+/* Custom blue accent color, similar to the portfolio design */
+.accent-blue {
+    color: #2563eb; /* Vibrant Blue */
+}
+
+/* Highlighted words - just strong blue text for emphasis */
+.highlight {
+    font-weight: 700;
+    color: #2563eb; /* Accent blue for keywords */
+    transition: color 0.2s;
+}
+
+/* ----------------------------------------------------------------
+   4. SECTION TITLE WITH UNDERLINE (e.g., "My Mentor", "Key Takeaways")
+   ---------------------------------------------------------------- */
+.section-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    font-size: 2.25rem; /* text-3xl */
+    font-weight: 700; /* font-bold */
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%; /* Half-width underline */
+    height: 3px;
+    background-color: #2563eb; /* Accent blue underline */
+}
+
+/* ----------------------------------------------------------------
+   5. LIST STYLES (for the dash bullet points)
+   ---------------------------------------------------------------- */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    padding-left: 1.5em; /* Space for the custom bullet */
+    position: relative;
+}
+
+/* Custom bullet point (simple dash and blue color) */
+ul li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: #2563eb; /* Accent blue dash */
+    font-weight: 700;
+}

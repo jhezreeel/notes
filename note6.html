@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reflection: Object-Oriented Programming (OOP)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Loading Inter font, similar to the clean font used in the website */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background-color: #ffffff; /* Clean white background */
+            color: #1f2937; /* Dark text for contrast (Tailwind gray-800) */
+            min-height: 100vh;
+        }
+        
+        /* Custom blue accent color, similar to the one in the screenshot */
+        .accent-blue {
+            color: #2563eb; /* Vibrant Blue */
+        }
+        
+        /* Custom class for the section title style (like "About Me" with the underline) */
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 5px;
+            font-size: 2.25rem; /* text-3xl */
+            font-weight: 700; /* font-bold */
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50%;
+            height: 3px;
+            background-color: #2563eb; /* Accent blue underline */
+        }
+
+        /* List styles updated for a clean look */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px; 
+            padding-left: 1.5em; 
+            position: relative;
+        }
+        
+        /* Custom bullet point (simple dash and blue color) */
+        ul li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #2563eb; /* Accent blue dash */
+            font-weight: 700;
+        }
+
+        /* Highlighted words - just strong blue text for emphasis */
+        .highlight {
+            font-weight: 700;
+            color: #2563eb; /* Accent blue for keywords */
+            transition: color 0.2s;
+        }
+    </style>
+</head>
+<body class="text-gray-900">
+
+    <div class="container max-w-5xl mx-auto py-16 px-4 md:px-8">
+
+        <!-- Header Section -->
+        <header class="mb-16">
+            <p class="text-xl text-gray-700 font-semibold mb-2">My Notes / Reflection</p>
+            <h1 class="text-6xl md:text-7xl font-extrabold tracking-tight text-gray-900 leading-none">
+                <span class="accent-blue">Object-Oriented Programming</span> (OOP)
+            </h1>
+            <p class="mt-4 text-2xl font-medium text-gray-500">
+                The turning point in my programming journey: structure, logic, and design.
+            </p>
+        </header>
+
+        <!-- Main Content (The Reflection) -->
+        <div class="space-y-8 text-xl leading-relaxed text-gray-700">
+            
+            <p>
+                Grabe, isa sa mga subjects na sobrang nag-enjoy ako this semester ay yung <span class="highlight">Object-Oriented Programming (OOP)</span>. Dito talaga namin na-experience kung paano mag-code nang mas structured at organized, at kung paano gumagana ang mga core concepts tulad ng <span class="highlight">classes, objects, inheritance, encapsulation, at polymorphism</span> sa totoong projects. Dito ko narealize na programming is not just about making something work, kundi yung logic at design ng system ang pinaka-importante.
+            </p>
+
+            <!-- Mentor Section -->
+            <h2 class="section-title text-gray-900 mt-16 mb-8">
+                Guidance from Sir Elija Equiñas
+            </h2>
+
+            <p>
+                At siyempre, si <span class="highlight">Sir Elija Equiñas</span> ang prof namin — sobrang hands-on at chill, pero sabay may laman talaga yung mga tinuturo niya. Hindi lang basta mag-code, kundi tinuturuan niya kami kung bakit ganito ang design ng system, paano dapat mag-structure ng classes, at paano i-handle yung relationships ng objects para efficient at maintainable ang code. Parang nag-eexplore ka ng world ng coding na may purpose at structure.
+            </p>
+            
+            <!-- Project Milestone Section -->
+            <h2 class="section-title text-gray-900 mt-16 mb-8">
+                The First Complete System
+            </h2>
+
+            <p>
+                Isa sa pinaka-memorable part ng subject na ito ay nung ginawa namin yung <span class="highlight">first ever system namin with a working database</span>. Grabe, nakakatuwa kasi from scratch, kami mismo yung nagplano, nag-design ng interface, nag-code ng backend, at nag-connect ng database para gumana nang buo. Nung una, sobrang nakaka-overwhelm — ang dami ng kailangang intindihin, lalo na yung connections, relationships ng classes, at logic ng whole system. Pero nung nakita naming gumana siya, ang sarap sa feeling. Parang proud moment talaga kasi nakita namin yung pinaghirapan naming code na finally nagra-run properly at functional.
+            </p>
+
+            <p>
+                Na-enjoy ko rin yung part na exploring different concepts of OOP. Dati, akala ko pare-pareho lang ang coding — basta may output, okay na. Pero dito ko narealize na may mas malalim pala: <span class="highlight">designing reusable code</span>, organizing logic through classes, at pag-structure ng system in a way na madaling i-maintain. Parang nakikita mo na yung skill na yun ay hindi lang for school — para sa real-world coding projects din. Mas naging open-minded ako sa idea na programming isn’t just about syntax, kundi pati planning, creativity, at efficiency sa problem-solving.
+            </p>
+
+            <p class="pt-8 text-gray-600 border-t border-gray-200">
+                Overall, OOP made me appreciate programming even more. Hindi lang basta about typing code, kundi tungkol sa building something functional, reusable, and smart. At dahil sa subject na ito, mas na-inspire akong mag-improve sa coding, mag-explore ng bagong frameworks, at gumawa pa ng mas malalaking projects in the future. Super solid na experience, lalo na dahil guided kami ni Sir Elija all throughout — challenging pero enjoyable, technical pero fulfilling. Parang, looking back, OOP sa 2nd year ko ang pinaka-turning point ko sa programming — dito ko na-feel yung combination ng logic, creativity, at planning na kailangan sa pagiging effective na programmer.
+            </p>
+            
+        </div>
+        
+    </div>
+
+</body>
+</html>

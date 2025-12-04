@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reflection: Human-Computer Interaction (HCI)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Loading Inter font, similar to the clean font used in the website */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background-color: #ffffff; /* Clean white background */
+            color: #1f2937; /* Dark text for contrast (Tailwind gray-800) */
+            min-height: 100vh;
+        }
+        
+        /* Custom blue accent color, similar to the one in the screenshot */
+        .accent-blue {
+            color: #2563eb; /* Vibrant Blue */
+        }
+        
+        /* Custom class for the section title style (like "About Me" with the underline) */
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 5px;
+            font-size: 2.25rem; /* text-3xl */
+            font-weight: 700; /* font-bold */
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50%;
+            height: 3px;
+            background-color: #2563eb; /* Accent blue underline */
+        }
+
+        /* List styles updated for a clean look */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px; 
+            padding-left: 1.5em; 
+            position: relative;
+        }
+        
+        /* Custom bullet point (simple dash and blue color) */
+        ul li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #2563eb; /* Accent blue dash */
+            font-weight: 700;
+        }
+
+        /* Highlighted words - just strong blue text for emphasis */
+        .highlight {
+            font-weight: 700;
+            color: #2563eb; /* Accent blue for keywords */
+            transition: color 0.2s;
+        }
+    </style>
+</head>
+<body class="text-gray-900">
+
+    <div class="container max-w-5xl mx-auto py-16 px-4 md:px-8">
+
+        <!-- Header Section -->
+        <header class="mb-16">
+            <p class="text-xl text-gray-700 font-semibold mb-2">My Notes / Reflection</p>
+            <h1 class="text-6xl md:text-7xl font-extrabold tracking-tight text-gray-900 leading-none">
+                <span class="accent-blue">Human-Computer Interaction</span> (HCI)
+            </h1>
+            <p class="mt-4 text-2xl font-medium text-gray-500">
+                The creative world of UI/UX design and user experience.
+            </p>
+        </header>
+
+        <!-- Main Content (The Reflection) -->
+        <div class="space-y-8 text-xl leading-relaxed text-gray-700">
+            
+            <p>
+                Omg, sa <span class="highlight">HCI</span> super enjoy talaga ako, kasi dito namin natutunan yung basics ng UI/UX design gamit yung <span class="highlight">Figma</span>. We got to do wireframes, prototypes, animations, and lahat ng paraan para maging mas user-friendly at visually appealing yung system o app.
+            </p>
+
+            <p>
+                Honestly, mas masaya ito kesa sa backend coding kasi mas <span class="highlight">creative</span> siya, more on design and visuals, which has always been my thing kahit bago pa lang ako sa IT. Parang satisfying lang pag nakikita mo yung layout na ginawa mo, tapos gumagalaw pa siya kasi sa mga animations na nilagay mo. Feeling ko legit “alive” yung project mo, and super fun na makita kung paano nage-experience ng user yung ginawa mo.
+            </p>
+            
+            <!-- Key Learning Section -->
+            <h2 class="section-title text-gray-900 mt-16 mb-8">
+                Key Learning: User Experience
+            </h2>
+
+            <p>
+                Sa HCI, natutunan ko rin na <span class="highlight">user experience</span> talaga ang number one. Hindi lang about kung functional yung app; dapat madaling gamitin, intuitive, at aesthetic pa. Kailangan i-consider mo yung perspective ng user—kung paano sila mag-iinteract, ano yung pinaka-natural na flow, at kung paano magiging smooth yung interaction.
+            </p>
+            
+            <p>
+                Ang best part is yung mga interactive features sa Figma, like hover effects, micro-interactions, at animated transitions. Parang maliit na detalye lang pero huge effect sa feel ng app. Doon ko na-realize na sa <span class="highlight">UI/UX, details talaga matter</span>—even yung color choice o button placement puwede mag-change ng whole experience ng user.
+            </p>
+
+            <p>
+                Mas na-appreciate ko rin yung balance between creativity and functionality. Kailangan hindi lang maganda sa mata, pero efficient din gamitin. UI/UX designers are basically problem solvers using design—iniisip nila kung paano magiging easier, smoother, at mas enjoyable yung experience ng user.
+            </p>
+
+            <p class="pt-8 text-gray-600 border-t border-gray-200">
+                Overall, HCI was super chill and fun. Parang break from all the hardcore coding sa App Dev pero productive pa rin kasi natututo ka mag-imagine at gumawa ng designs na visually appealing at user-friendly. Ang saya talaga pag makita mong mula sa concept hanggang interactive prototype, lahat ng effort mo may impact sa user. If App Dev is all about challenge + reward sa coding, HCI is reward + fun sa creativity—perfect balance sa IT student life.
+            </p>
+            
+        </div>
+        
+    </div>
+
+</body>
+</html>

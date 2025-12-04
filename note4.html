@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reflection: Systems Analysis and Design (SAD)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Loading Inter font, similar to the clean font used in the website */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background-color: #ffffff; /* Clean white background */
+            color: #1f2937; /* Dark text for contrast (Tailwind gray-800) */
+            min-height: 100vh;
+        }
+        
+        /* Custom blue accent color, similar to the one in the screenshot */
+        .accent-blue {
+            color: #2563eb; /* Vibrant Blue */
+        }
+        
+        /* Custom class for the section title style (like "About Me" with the underline) */
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 5px;
+            font-size: 2.25rem; /* text-3xl */
+            font-weight: 700; /* font-bold */
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50%;
+            height: 3px;
+            background-color: #2563eb; /* Accent blue underline */
+        }
+
+        /* List styles updated for a clean look */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px; 
+            padding-left: 1.5em; 
+            position: relative;
+        }
+        
+        /* Custom bullet point (simple dash and blue color) */
+        ul li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #2563eb; /* Accent blue dash */
+            font-weight: 700;
+        }
+
+        /* Highlighted words - just strong blue text for emphasis */
+        .highlight {
+            font-weight: 700;
+            color: #2563eb; /* Accent blue for keywords */
+            transition: color 0.2s;
+        }
+    </style>
+</head>
+<body class="text-gray-900">
+
+    <div class="container max-w-5xl mx-auto py-16 px-4 md:px-8">
+
+        <!-- Header Section -->
+        <header class="mb-16">
+            <p class="text-xl text-gray-700 font-semibold mb-2">My Notes / Reflection</p>
+            <h1 class="text-6xl md:text-7xl font-extrabold tracking-tight text-gray-900 leading-none">
+                <span class="accent-blue">Systems Analysis and Design</span> (SAD)
+            </h1>
+            <p class="mt-4 text-2xl font-medium text-gray-500">
+                The challenging yet essential foundation for building digital systems.
+            </p>
+        </header>
+
+        <!-- Main Content (The Reflection) -->
+        <div class="space-y-8 text-xl leading-relaxed text-gray-700">
+            
+            <p>
+                Grabe, <span class="highlight">SAD</span> talaga isa sa pinaka-challenging pero super interesting na subjects namin this semester. Dito namin natutunan yung fundamental parts of a system, yung general system principles, at siyempre yung pinaka-core: <span class="highlight">system analysis</span>. Natutunan namin paano i-break down yung buong system sa parts, paano mag-analyze ng process, at paano i-structure yung system para mas smooth yung flow ng data at interaction.
+            </p>
+
+            <!-- Diagrams and Planning Section -->
+            <h2 class="section-title text-gray-900 mt-16 mb-8">
+                Visualizing the System
+            </h2>
+
+            <p>
+                Part ng learning namin yung paggawa ng <span class="highlight">DFD (Data Flow Diagrams)</span> at <span class="highlight">ERD (Entity-Relationship Diagrams)</span> para mas ma-visualize natin yung flow ng information at relationships ng bawat data. Bukod dyan, nag-explore rin kami ng flowcharts, Warnier-O diagrams, at Gantt charts para planuhin yung proseso at schedule ng project. Super helpful ito kasi bago ka magsulat ng kahit anong code, klaro na sa’yo paano dapat gumana yung system, paano mag-interact ang bawat bahagi, at paano i-manage yung time at resources.
+            </p>
+
+            <p>
+                Bukod sa analysis at diagrams, natutunan din namin gumawa ng <span class="highlight">low-fi wireframes at UI/UX designs</span>. Super fun kasi dito, parang HCI meets planning — kailangan maging creative pero practical din. Kailangan user-friendly at intuitive yung design, kasi sa end, yung system ay gagamitin ng tao, hindi lang para sa technical specs.
+            </p>
+            
+            <!-- Project Integration Section -->
+            <h2 class="section-title text-gray-900 mt-16 mb-8">
+                Project Execution and Defense
+            </h2>
+
+            <p>
+                At siyempre, hindi lang puro planning — meron din kaming project na Learning System Management na kelangan i-develop at i-defend. Dito namin pinagsama lahat ng natutunan: analysis, DFD, ERD, flowcharts, Warnier-O diagrams, Gantt charts, low-fi/UI-UX, at coding para maging “alive” yung system. Nakaka-pressure kasi kailangan ma-perfect yung integration ng lahat, pero <span class="highlight">super rewarding</span> kapag gumana yung final output at makita mong interactive at functional yung system na ginawa mo.
+            </p>
+            
+            <!-- Mentor Section -->
+            <h2 class="section-title text-gray-900 mt-16 mb-8">
+                Guidance from Ma’am Yumie
+            </h2>
+
+            <p>
+                Isa sa pinaka-nice din sa class na ito ay yung guidance namin kay <span class="highlight">Ma’am Yumie</span>. Super thankful ako kasi tinuturuan niya kami ng tama, patient siya, at naiintindihan niya kami kapag may mistakes. Ramdam mo talaga na gusto niyang matuto kami ng maayos at hindi lang puro deadlines. Parang lagi siyang nandoon to guide and explain things until makuha namin, and sobrang nakatulong sa confidence ko sa project.
+            </p>
+
+            <p>
+                Natuto rin ako na sa SAD, hindi lang basta coding o design ang mahalaga. Kailangan mo rin yung <span class="highlight">system thinking</span>: isipin ang buong process, data flow, timing, at user interaction bago ka gumawa ng kahit anong actual code. Parang pagiging architect ng isang digital system — plan, design, at execute in a way na makikita yung buong structure at interaction.
+            </p>
+
+            <p class="pt-8 text-gray-600 border-t border-gray-200">
+                Overall, SAD was challenging, medyo stressful, pero super fulfilling. From diagrams, charts, UI/UX, hanggang sa coding para buhayin yung project, sobrang comprehensive experience siya. Isa sa pinaka-rewarding moments kapag nakikita mong gumagana yung buong system—from analysis to design to actual implementation, at maipapakita mo sa defense na kaya mo talagang i-apply lahat ng natutunan mo. Grabe, sobrang thankful talaga ako kay Ma’am Yumie for all the guidance and patience—talagang smooth ang learning journey namin because of her.
+            </p>
+            
+        </div>
+        
+    </div>
+
+</body>
+</html>
